@@ -15,13 +15,13 @@ import lombok.EqualsAndHashCode;
 @PrimaryKeyJoinColumn(name = "user_id", referencedColumnName = "id")
 public class Employer extends User {
 	
-	@Column(name = "companyName")
+	@Column(name = "company_name")
 	private String companyName;
 
-	@Column(name = "website")
+	@Column(name = "web_adress")
 	private String website;
 
-	@Column(name = "phoneNo")
+	@Column(name = "phone_no")
 	private String phoneNo;
 	
 }

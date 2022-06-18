@@ -10,21 +10,21 @@ import lombok.EqualsAndHashCode;
 
 @Data
 @Entity
-@Table(name = "job-seekers")
+@Table(name = "job_seekers")
 @EqualsAndHashCode(callSuper = false)
 @PrimaryKeyJoinColumn(name = "user_id", referencedColumnName = "id")
 public class JobSeeker extends User {
 
-	@Column(name = "firstName")
+	@Column(name = "first_name")
 	private String firstName;
 
-	@Column(name = "lastName")
+	@Column(name = "last_name")
 	private String lastName;
 
-	@Column(name = "identificationNo")
+	@Column(name = "identification_no")
 	private String identityNumber;
 
-	@Column(name = "birthYear")
+	@Column(name = "birth_year")
 	private int birthYear;
 
 }

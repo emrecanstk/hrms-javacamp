@@ -10,7 +10,7 @@ import lombok.EqualsAndHashCode;
 
 @Data
 @Entity
-@Table(name = "system-personnels")
+@Table(name = "system_personnels")
 @EqualsAndHashCode(callSuper = false)
 @PrimaryKeyJoinColumn(name = "user_id", referencedColumnName = "id")
 public class SystemPersonnel extends User {
