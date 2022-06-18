@@ -1,5 +1,9 @@
 package com.emrecanstk.hrms.dataAccess.abstracts;
 
-public interface SystemPersonnelDao {
+import org.springframework.data.jpa.repository.JpaRepository;
+
+import com.emrecanstk.hrms.entities.concretes.SystemPersonnel;
+
+public interface SystemPersonnelDao extends JpaRepository<SystemPersonnel, Integer> {
 
 }
