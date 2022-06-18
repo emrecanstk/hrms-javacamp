@@ -4,11 +4,11 @@ import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
 
-import com.emrecanstk.hrms.business.abstracts.UserService;
+import com.emrecanstk.hrms.business.abstracts.EmployerService;
 import com.emrecanstk.hrms.dataAccess.abstracts.EmployerDao;
-import com.emrecanstk.hrms.entities.concretes.User;
+import com.emrecanstk.hrms.entities.concretes.Employer;
 
-public class EmployerManager implements UserService {
+public class EmployerManager implements EmployerService {
 
 	private EmployerDao employerDao;
 	
@@ -19,7 +19,7 @@ public class EmployerManager implements UserService {
 	}
 
 	@Override
-	public List<User> getAll() {
+	public List<Employer> getAll() {
 		// TODO Auto-generated method stub
 		return this.employerDao.findAll();
 	}

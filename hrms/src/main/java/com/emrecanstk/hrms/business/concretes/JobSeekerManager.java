@@ -4,11 +4,11 @@ import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
 
-import com.emrecanstk.hrms.business.abstracts.UserService;
+import com.emrecanstk.hrms.business.abstracts.JobSeekerService;
 import com.emrecanstk.hrms.dataAccess.abstracts.JobSeekerDao;
-import com.emrecanstk.hrms.entities.concretes.User;
+import com.emrecanstk.hrms.entities.concretes.JobSeeker;
 
-public class JobSeekerManager implements UserService {
+public class JobSeekerManager implements JobSeekerService {
 	
 	
 	private JobSeekerDao jobSeekerDao;
@@ -20,7 +20,7 @@ public class JobSeekerManager implements UserService {
 	}
 
 	@Override
-	public List<User> getAll() {
+	public List<JobSeeker> getAll() {
 		// TODO Auto-generated method stub
 		return this.jobSeekerDao.findAll();
 	}
